@@ -19,7 +19,7 @@ type Track {
     "the track's approximate length to complete, in minutes"
     length: Int
     "the number of modules this track contains"
-    modulesContent: Int
+    modulesCount: Int
 }
 
 "Author of a complete Track"
