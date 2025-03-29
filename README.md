@@ -41,3 +41,7 @@ ApolloServer: A full-fledged GraphQl-spec compliant server.
 
 GraphQL-Tag:
 Provides gql template literal
+
+Inside Client Folder:
+1. graphql: Provides core logic for parsing GraphQL queries
+2. @apollo/client: In-memory cache, local state management, and error handling
