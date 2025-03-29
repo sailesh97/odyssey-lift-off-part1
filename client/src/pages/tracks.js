@@ -28,10 +28,6 @@ const TRACKS = gql`
 const Tracks = () => {
   const { loading, error, data } = useQuery(TRACKS);
 
-  if(loading) return 'Loading...';
-
-  if(error) return `ERROR! ${error.message}`;
-
   return <Layout grid>
     <QueryResult error={error} loading={loading} data={data}>
       {data?.tracksForHome?.map(track => <TrackCard key={track.id} track={track}/>)}
